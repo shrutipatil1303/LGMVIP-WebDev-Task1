@@ -1,0 +1,135 @@
+@media only screen and (max-width:769px) {
+     :root {
+        --primary: indianred;
+        --secondary: black;
+        --light: rgb(73, 71, 71);
+    }
+    #sidenav {
+        display: block;
+    }
+    #menubar {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(0%, -50%);
+        z-index: 99;
+        background-color: var(--primary);
+        color: white;
+        font-size: 20px;
+        padding: 20px 10px;
+        animation: animate 3s ease infinite;
+    }
+    @keyframes animate {
+        0% {
+            background-color: rgb(53, 52, 52)
+        }
+        100% {
+            background-color: var(--primary);
+        }
+    }
+    #sidenav {
+        width: 0px;
+        height: 700px;
+        /*  line-height: 90px; */
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        background-color: var(--light);
+        padding-top: 70px;
+        display: block;
+        overflow: hidden;
+        transition: 0.5s ease-in-out;
+    }
+    #sidenav ul {
+        list-style: none;
+        /* text-align: center; */
+    }
+    #sidenav ul li {
+        display: block;
+        width: 200px;
+        position: relative;
+        z-index: 99;
+        margin: 10px 20px;
+    }
+    #sidenav ul li a {
+        text-decoration: none;
+        color: whitesmoke;
+        font-weight: bolder;
+        display: block;
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+    #sidenav ul li a:hover {
+        color: var(--primary);
+    }
+    #sidenav ul li a i {
+        color: var(--primary);
+        margin: 0px 6px;
+    }
+    #sidenav ul ul {
+        position: absolute;
+        top: 70px;
+        left: 0px;
+        display: none;
+    }
+    #sidenav ul ul li {
+        /* background-color: white; */
+        border-bottom: 1px solid var(--primary);
+    }
+    #sidenav ul li:hover>ul {
+        display: block;
+    }
+    .nav1 {
+        position: relative;
+        z-index: 3;
+        background-color: white;
+    }
+    .right i {
+        font-size: 16px;
+        margin: 3px 9px;
+    }
+    .nav2 {
+        width: 100%;
+        height: 80px;
+    }
+    .nav2 .nav2-left i {
+        margin-left: 1px;
+    }
+    .nav2 .nav2-center h1 {
+        font-size: 13px;
+        letter-spacing: 3px;
+    }
+    .nav2 .nav2-center p {
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    .nav3 {
+        display: none;
+    }
+    .featured {
+        background-attachment: fixed;
+    }
+    .latest {
+        padding: 10px 50px;
+    }
+    .card-conatiner {
+        margin: 25px 0px;
+    }
+    .card-conatiner .card {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .trends {
+        padding: 20px 50px;
+    }
+    .trends .swiper-slide {
+        width: 350px;
+        height: 400px;
+    }
+    footer div {
+        flex-basis: 50%;
+        margin: 10px 1px;
+    }
+}
